@@ -177,6 +177,9 @@
 
 .blog {
   background-color: #e5e5e5;
+  width: 100%;
+  height: 743px;
+  font-family: "Exo 2";
 }
 
 .blog-text {
@@ -190,10 +193,37 @@
 }
 
 .blog-container {
-  margin: 0 80px;
+  width: 100%;
+  padding: 0 80px;
+}
+
+.blog-container__body {
+  position: relative;
+  max-width: 406px;
+  max-height: 406px;
+}
+
+.blog-container__background {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 3px;
+}
+
+.blog-container__footer {
+  position: absolute;
+  width: 100%;
+  height: 60px;
+  bottom: 0;
+  background: #11725d;
+  opacity: 0.85;
+  border-radius: 0px 0px 3px 3px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .blog-data {
@@ -202,6 +232,57 @@
   line-height: 18px;
   color: #f8f8f8;
   margin: 21px 20px 0 0;
+}
+
+.blog-container-footer__info {
+  margin: 9px 0 9px 10px;
+}
+
+.blog-container-footer-info__text {
+  font-family: Exo 2;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
+  color: #f8f8f8;
+}
+
+.blog-container-footer-info__logolight {
+  margin: 0 0 9px 0;
+  float: right;
+}
+
+.blog-container-footer__bottom {
+  background-color: #edf1f0;
+}
+
+.blog-container-footer-bottom__mane {
+  font-family: Exo 2;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 26px;
+  color: #11725d;
+  margin: 0 10px 18px 10px;
+}
+
+.blog-container-footer__body {
+  font-family: Exo 2;
+  font-size: 16px;
+  line-height: 24px;
+  color: #444444;
+  margin: 0 10px 4px 10px;
+}
+
+.footer-bottom__footer {
+  margin: 20px 0 20px 20px;
+}
+
+.footer-bottom-footer-column1__link {
+  font-family: Exo 2;
+  font-size: 16px;
+  line-height: 19px;
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
+  color: #444444;
 }
 
 * {
@@ -554,7 +635,6 @@ body {
 
 .emotion__text {
   font-family: Exo 2;
-  font-style: normal;
   font-weight: 600;
   font-size: 42px;
   line-height: 52px;
