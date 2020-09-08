@@ -27,6 +27,5 @@ testWebP(function (support) {
 $(document).ready(function () {
 	$('.slider').slick({
 		slidesToShow: 3,
-		appendArrows: $('.arrows'),
 	});
 });  

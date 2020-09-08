@@ -36,18 +36,6 @@
 
 /* Стрелка */
 
-.arrows {
-  position: absolute;
-  right: 0;
-  margin-right: 80px;
-}
-
-.arrows-img1 {
-  position: absolute;
-  color: #11725d;
-  width: 15px;
-}
-
 .slick-arrow {
   position: absolute;
   top: 0;
@@ -59,6 +47,9 @@
 
 .slick-arrow.slick-prev {
   right: 0;
+  background-image: url(../img/arrow.svg);
+  background-repeat: no-repeat;
+  background-position: center;
   background-color: #f8f8f8;
   width: 45px;
   height: 35px;
@@ -70,6 +61,9 @@
 
 .slick-arrow.slick-next {
   right: 0;
+  background-image: url(../img/arrow2.svg);
+  background-repeat: no-repeat;
+  background-position: center;
   background-color: #f8f8f8;
   width: 45px;
   height: 35px;
