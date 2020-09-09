@@ -36,13 +36,12 @@
 	width: 100%;
 	height: 60px;
 	margin-top: -60px;
-	background: #11725d;
-	opacity: 0.85;
-	border-radius: 0px 0px 3px 3px;
+	background-color: #11725d;
+	opacity: 0.8;
 	display: flex;
 	justify-content: space-between;
 }
-
+//rgb(17, 114, 93, 0.85);
 .blog-container-footer__info {
 	margin: 9px 0 9px 10px;
 }
@@ -68,6 +67,7 @@
 .blog-container-footer__bottom {
 	background-color: #edf1f0;
 	min-height: 250px;
+	border-radius: 0px 0px 3px 3px;
 }
 .blog-container-footer-bottom__mane {
 	font-family: Exo 2;

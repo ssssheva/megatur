@@ -336,8 +336,6 @@ body {
 }
 .emotion-column__body {
 	position: relative;
-	max-width: 406px;
-	max-height: 406px;
 	margin: 0 15px;
 }
 .emotion-column__background {
@@ -362,7 +360,8 @@ body {
 .emotion-column-footer__info {
 	margin: 9px 0 9px 10px;
 }
-.emotion-column-footer-info__logo {
+.emotion-column-footer__icon {
+	margin: 12px 20px 0 0;
 }
 .emotion-column-footer-info__text {
 	font-family: Exo 2;
