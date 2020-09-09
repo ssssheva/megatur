@@ -43,7 +43,7 @@
 }
 //rgb(17, 114, 93, 0.85);
 .blog-container-footer__info {
-	margin: 9px 0 9px 10px;
+	margin: 9px 0 9px 20px;
 }
 
 .blog-container-footer-info__text {
@@ -75,7 +75,7 @@
 	font-size: 18px;
 	line-height: 26px;
 	color: #11725d;
-	margin: 0 10px 18px 10px;
+	margin: 0 20px 18px 20px;
 	padding: 20px 0 0 0;
 }
 .blog-container-footer__body {
@@ -83,9 +83,7 @@
 	font-size: 16px;
 	line-height: 24px;
 	color: #444444;
-	margin: 0 10px 4px 10px;
-}
-.footer-bottom__footer {
+	margin: 0 20px 4px 20px;
 }
 
 .footer-bottom-footer-column1__link {
@@ -94,6 +92,8 @@
 	line-height: 19px;
 	text-decoration-line: underline;
 	color: #444444;
+	margin: 0 0 0 20px;
+	display: block;
 }
 
 .blog__button {
