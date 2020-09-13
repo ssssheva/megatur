@@ -404,7 +404,7 @@
 }
 
 .post-input__button :hover {
-  background-color: #a9a9a9;
+  opacity: 0.8;
 }
 
 .post-input-button__link {
