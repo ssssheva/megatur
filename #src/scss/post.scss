@@ -1,0 +1,119 @@
+.post {
+	height: 400px;
+}
+
+.post-content {
+	padding: 0 80px;
+	text-align: center;
+}
+
+.post-header {
+	font-family: Exo 2;
+	font-weight: 500;
+	font-size: 64px;
+	line-height: 62px;
+	color: #f8f8f8;
+	margin-top: 80px;
+}
+
+.post-text {
+	font-family: Exo 2;
+	font-size: 18px;
+	line-height: 28px;
+	color: #f8f8f8;
+	margin: 20px 0 33px 0;
+}
+
+.post-input {
+	width: 625px;
+	background-color: #f8f8f8;
+	display: flex;
+	justify-content: space-between;
+	border-radius: 3px;
+	margin: 0 auto;
+}
+.post-input__entry {
+	width: 294px;
+	margin: 20px 0 0 30px;
+}
+.input {
+	width: 100%;
+	display: block;
+	font-family: Exo 2;
+	font-size: 18px;
+	line-height: 22px;
+	color: #777777;
+	background-color: #f8f8f8;
+}
+
+.post-input__button {
+	margin: 0 auto;
+	background-color: #444444;
+	border-radius: 3px;
+	width: 163px;
+	height: 52px;
+	margin: 6px 6px 6px 0;
+}
+
+.post-input-button__link {
+	display: inline-block;
+	cursor: pointer;
+	user-select: none;
+	font-weight: 400;
+	line-height: 1.6;
+	text-transform: uppercase;
+	margin: 15px 0;
+}
+
+.post-agree {
+	display: flex;
+	justify-content: center;
+}
+
+.post-agree-cell__checkbox {
+	position: absolute;
+	z-index: -1;
+	opacity: 0;
+}
+.post-agree-cell__checkbox + label {
+	display: inline-flex;
+	align-items: center;
+	user-select: none;
+}
+.post-agree-cell__checkbox + label::before {
+	content: "";
+	display: inline-block;
+	width: 18px;
+	height: 18px;
+	flex-shrink: 0;
+	flex-grow: 0;
+	border: 1px solid #f8f8f8;
+	border-radius: 3px;
+	margin-right: 0.5em;
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: 50% 50%;
+}
+.post-agree-cell__checkbox:checked + label::before {
+	border-color: #f8a502;
+	background-color: #f8a502;
+	background-image: url("../img/check.svg");
+}
+
+.post-agree-cell__checkbox:not(:disabled):not(:checked) + label:hover::before {
+	border-color: #f8a502;
+}
+.post-agree__cell {
+	font-family: Exo 2;
+	font-size: 14px;
+	line-height: 17px;
+	color: #f8f8f8;
+}
+.post-agree__text {
+	font-family: Exo 2;
+	font-size: 14px;
+	line-height: 17px;
+	color: #f8a502;
+	text-decoration: underline;
+	padding-left: 3px;
+}
