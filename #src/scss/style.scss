@@ -12,8 +12,9 @@
 @import "slick";
 @import "blog";
 @import "post";
-$fontfamily: "Exo 2";
+
 //<ПЕРЕМЕННЫЕ>
+$fontfamily: "Exo 2", sans-serif;
 $minwidth: 320px;
 $mw: 1440;
 $md1: $mw + 12;
@@ -23,9 +24,9 @@ $md4: 479.98;
 
 //<ОБНУЛЕНИЕ, ОБЩИЕ ПАРАМЕТРЫ>
 * {
-	padding: 0px;
-	margin: 0px;
-	border: 0px;
+	padding: 0;
+	margin: 0;
+	border: 0;
 }
 *,
 *:before,
@@ -60,7 +61,6 @@ body {
 	color: #000;
 }
 body {
-	font-size: 100%;
 	line-height: 1;
 	font-size: 14px;
 	font-family: $fontfamily;
@@ -75,11 +75,6 @@ body {
 			overflow: hidden;
 		}
 	}
-}
-input,
-button,
-textarea {
-	font-family: $fontfamily;
 }
 input::-ms-clear {
 	display: none;
@@ -118,8 +113,6 @@ h6 {
 //</ОБНУЛЕНИЕ, ОБЩИЕ ПАРАМЕТРЫ>
 
 header {
-	max-height: 55px;
-	font-family: "Exo 2";
 	border-bottom: solid #749997 1px;
 	max-height: 55px;
 	position: absolute;
@@ -315,7 +308,6 @@ body {
 	background-color: #ffffff;
 	width: 100%;
 	height: 743px;
-	font-family: "Exo 2";
 	display: flex;
 }
 
@@ -324,7 +316,6 @@ body {
 	padding: 90px 80px 0 80px;
 }
 .emotion__text {
-	font-family: Exo 2;
 	font-weight: 600;
 	font-size: 42px;
 	line-height: 52px;
@@ -352,7 +343,7 @@ body {
 	height: 60px;
 	bottom: 0;
 	background: rgba(17, 114, 93, 0.85);
-	border-radius: 0px 0px 3px 3px;
+	border-radius: 0 0 3px 3px;
 	display: flex;
 	justify-content: space-between;
 }
@@ -364,7 +355,6 @@ body {
 	margin: 12px 20px 0 0;
 }
 .emotion-column-footer-info__text {
-	font-family: Exo 2;
 	font-style: normal;
 	font-weight: 600;
 	font-size: 20px;
