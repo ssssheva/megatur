@@ -478,6 +478,149 @@
   padding-left: 3px;
 }
 
+.footer {
+  background-color: #f8f8f8;
+  width: 100%;
+}
+
+.footer-container {
+  width: 100%;
+  padding: 108px 80px 116px 80px;
+}
+
+.footer-container__column {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 -15px;
+}
+
+.footer-column {
+  width: 188px;
+  margin: 0 15px;
+}
+
+.footer-column__head {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 26px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #11725d;
+  margin: 0 0 25px 0;
+}
+
+.footer-column__button {
+  margin-bottom: 10px;
+}
+
+.footer-column-button__link {
+  display: block;
+}
+
+.footer-column-button__svg {
+  width: 180px;
+  height: 57px;
+}
+
+.footer-column__link {
+  margin-bottom: 12px;
+}
+
+.anderline {
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
+}
+
+.footer-column-link__link {
+  font-size: 16px;
+  line-height: 19px;
+  color: #444444;
+  display: block;
+  width: 100%;
+}
+
+.footer-column-link__svg {
+  width: 10px;
+  height: 10px;
+}
+
+.lang {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 10px 15px;
+  background: #fff;
+  border-radius: 3px;
+}
+
+.footer-icon {
+  border-top: 1px solid #dae5e3;
+}
+
+.footer-icon__container {
+  padding: 30px 80px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.footer-icon__list {
+  margin: 0 -20px;
+}
+
+.footer-icon-list__link {
+  margin: 0 20px;
+  -webkit-transform: rotate(0deg);
+      -ms-transform: rotate(0deg);
+          transform: rotate(0deg);
+  -webkit-transition: -webkit-transform 0.2s linear;
+  transition: -webkit-transform 0.2s linear;
+  -o-transition: transform 0.2s linear;
+  transition: transform 0.2s linear;
+  transition: transform 0.2s linear, -webkit-transform 0.2s linear;
+}
+
+.footer-icon-list__link :hover {
+  -webkit-transform: rotate(360deg);
+  -ms-transform: rotate(360deg);
+      transform: rotate(360deg);
+}
+
+.footer-icon-list-link__svg {
+  width: 18px;
+  height: 18px;
+  -webkit-transform: rotate(0deg);
+      -ms-transform: rotate(0deg);
+          transform: rotate(0deg);
+  -webkit-transition: -webkit-transform 0.2s linear;
+  transition: -webkit-transform 0.2s linear;
+  -o-transition: transform 0.2s linear;
+  transition: transform 0.2s linear;
+  transition: transform 0.2s linear, -webkit-transform 0.2s linear;
+}
+
+.footer-icon-list-link__svg :hover {
+  -webkit-transform: rotate(360deg);
+  -ms-transform: rotate(360deg);
+      transform: rotate(360deg);
+}
+
+.footer-icon__info {
+  font-size: 14px;
+  line-height: 24px;
+  color: #676767;
+}
+
 * {
   padding: 0;
   margin: 0;

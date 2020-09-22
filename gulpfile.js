@@ -157,27 +157,13 @@ function svg() {
 	return src(path.src.svg)
 		.pipe(svgSprite({
 			mode: {
-				inline: true, // Prepare for inline embedding
-				symbol: true // Create a «symbol» sprite
+				inline: true,
+				symbol: true
 			},
 		}
 		))
 		.pipe(dest(path.build.svg))
 }
-``
-// gulp.task("svgSprite", function () {
-// 	return gulp.src([source_folder + "/iconsprite/*.svg"])
-// 		.pipe("svgSprite"({
-// 			mode: {
-// 				stack: {
-// 					sprite: "../icons/icons.svg",		//sprite file name
-// 					//example: true
-// 				}
-// 			},
-// 		}
-// 		))
-// 		.pipe(dest(path.build.img))
-// })
 
 function fontsStyle(params) {
 	let file_content = fs.readFileSync(source_folder + '/scss/fonts.scss');
