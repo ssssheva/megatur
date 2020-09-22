@@ -9,6 +9,7 @@ let path = {
 		css: project_folder + "/css/",
 		js: project_folder + "/js/",
 		img: project_folder + "/img/",
+		svg: project_folder + "/img/",
 		fonts: project_folder + "/fonts/",
 	},
 	src: {
@@ -16,6 +17,7 @@ let path = {
 		css: source_folder + "/scss/style.scss",
 		js: source_folder + "/js/script.js",
 		img: source_folder + "/img/**/*.{jpg,png,svg,gif,ico,webr}",
+		svg: source_folder + "/img/icon/**/*.svg",
 		fonts: source_folder + "/fonts/*.ttf",
 	},
 	watch: {
@@ -23,6 +25,7 @@ let path = {
 		css: source_folder + "/scss/**/*.scss",
 		js: source_folder + "/js/**/*.js",
 		img: source_folder + "/img/**/*.{jpg,png,svg,gif,ico,webr}",
+		svg: source_folder + "/img/icon/**/*.svg",
 	},
 	clean: "./" + project_folder + "/"
 }
@@ -115,7 +118,7 @@ function images() {
 	return src(path.src.img)
 		.pipe(
 			webp({
-				qualiti: 70
+				quality: 70
 			})
 		)
 		.pipe(dest(path.build.img))
@@ -149,19 +152,32 @@ gulp.task("otf2ttf", function () {
 		.pipe(dest(source_folder + "/fonts/"));
 })
 
-gulp.task("svgSprite", function () {
-	return gulp.src([source_folder + "/iconsprite/*.svg"])
-		.pipe("svgSprite"({
+
+function svg() {
+	return src(path.src.svg)
+		.pipe(svgSprite({
 			mode: {
-				stack: {
-					sprite: "../icons/icons.svg",		//sprite file name
-					//example: true
-				}
+				inline: true, // Prepare for inline embedding
+				symbol: true // Create a «symbol» sprite
 			},
 		}
 		))
-		.pipe(dest(path.build.img))
-})
+		.pipe(dest(path.build.svg))
+}
+``
+// gulp.task("svgSprite", function () {
+// 	return gulp.src([source_folder + "/iconsprite/*.svg"])
+// 		.pipe("svgSprite"({
+// 			mode: {
+// 				stack: {
+// 					sprite: "../icons/icons.svg",		//sprite file name
+// 					//example: true
+// 				}
+// 			},
+// 		}
+// 		))
+// 		.pipe(dest(path.build.img))
+// })
 
 function fontsStyle(params) {
 	let file_content = fs.readFileSync(source_folder + '/scss/fonts.scss');
@@ -192,18 +208,20 @@ function watchFiles(params) {
 	gulp.watch([path.watch.css], css);
 	gulp.watch([path.watch.js], js);
 	gulp.watch([path.watch.img], images);
+	gulp.watch([path.watch.svg], svg);
 }
 
 function clean(params) {
 	return del(path.clean);
 }
 
-let build = gulp.series(clean, gulp.parallel(js, css, html, images, fonts));
+let build = gulp.series(clean, gulp.parallel(js, css, html, images, fonts, svg));
 let watch = gulp.parallel(build, watchFiles, browserSync);
 
 exports.fontsStyle = fontsStyle;
 exports.fonts = fonts;
 exports.images = images;
+exports.svg = svg;
 exports.js = js;
 exports.css = css;
 exports.html = html;
