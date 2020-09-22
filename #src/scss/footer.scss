@@ -76,6 +76,7 @@
 
 .footer-icon-list__link {
 	margin: 0 20px;
+	display: inline-block
 	transform: rotate(0deg);
 	transition: transform 0.2s linear;
 	:hover {
@@ -87,12 +88,6 @@
 .footer-icon-list-link__svg {
 	width: 18px;
 	height: 18px;
-	transform: rotate(0deg);
-	transition: transform 0.2s linear;
-	:hover {
-		-webkit-transform: rotate(360deg);
-		transform: rotate(360deg);
-	}
 }
 
 .footer-icon__info {
