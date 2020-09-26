@@ -2,6 +2,11 @@
 	background-color: #ffffff;
 	width: 100%;
 }
+
+.blog-container {
+	width: 100%;
+	padding: 0 80px 0 80px;
+}
 .blog-text {
 	font-weight: 600;
 	font-size: 42px;
@@ -10,12 +15,9 @@
 	margin: 0 0 70px 80px;
 	padding: 120px 0 0 0;
 }
-.blog-container {
-	width: 100%;
-	padding: 0 80px 200px 80px;
-}
 .blog-container-column {
 	display: flex;
+	justify-content: center;
 	margin: 0 -15px 50px -15px;
 }
 .blog-container__body {

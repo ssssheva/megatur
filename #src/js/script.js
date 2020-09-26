@@ -23,7 +23,11 @@ testWebP(function (support) {
 	$('.menu__body').toggleClass('active');
 	$('body').toggleClass('lock');
 });*/
-
+$(document).ready(function () {
+	$('.slidermain').slick({
+		slidesToShow: 1,
+	});
+});
 $(document).ready(function () {
 	$('.slider').slick({
 		slidesToShow: 5,
@@ -55,4 +59,5 @@ $(document).ready(function () {
 			},
 		]
 	});
-});  
+});
+

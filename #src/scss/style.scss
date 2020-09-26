@@ -13,6 +13,7 @@
 @import "blog";
 @import "post";
 @import "footer";
+@import "slickmain";
 
 //<ПЕРЕМЕННЫЕ>
 $fontfamily: "Exo 2", sans-serif;
@@ -119,6 +120,8 @@ header {
 	position: absolute;
 	width: 100%;
 	top: 0;
+	display: flex;
+	justify-content: center;
 }
 .container-header {
 	max-width: 1280px;
@@ -136,7 +139,6 @@ a {
 .maine-menu {
 	margin-top: 13px;
 	display: flex;
-	justify-content: space-between;
 	font-size: 18px;
 
 	&__logo {
@@ -160,7 +162,7 @@ a {
 		margin-top: 10px;
 	}
 	&__search {
-		margin: 6px 0 0 15px;
+		margin: 6px 0 0 480px;
 		:hover {
 		}
 	}
@@ -212,22 +214,23 @@ a {
 	padding: 11px 34px;
 }
 body {
-	background-color: #11725d;
 	background-size: 100%;
 }
 
 .maine-content {
 	display: flex;
+	justify-content: center;
 	min-height: 100vh;
 	min-width: 100vh;
+	background-color: #11725d;
 }
 .content-left {
-	width: 813px;
-	min-height: 100vh;
+	//width: 813px;
+	//min-height: 100vh;
 }
 .content-right {
-	width: 627px;
-	min-height: 100vh;
+	//width: 627px;
+	//min-height: 100vh;
 }
 .content-right__img {
 	height: 100%;
@@ -239,7 +242,7 @@ body {
 	flex-direction: column;
 	justify-content: space-between;
 	min-height: 100vh;
-	width: 813px;
+	//width: 813px;
 }
 .content-left__text {
 	margin: 240px 0 0 80px;
@@ -310,10 +313,10 @@ body {
 	width: 100%;
 	height: 743px;
 	display: flex;
+	justify-content: center;
 }
 
 .emotion__container {
-	width: 100%;
 	padding: 90px 80px 0 80px;
 }
 .emotion__text {
