@@ -79,13 +79,34 @@
 
 .excursions {
   width: 100%;
-  height: 1000px;
   position: relative;
+  padding-top: 90px;
+  padding-bottom: 70px;
+}
+
+.excursions .slick-slider .slick-list {
+  padding: 0 65px;
+}
+
+.excursions .slick-slider .slick-list .slick-slide {
+  opacity: 0.6;
+  -webkit-transition: opacity 0.2s ease;
+  -o-transition: opacity 0.2s ease;
+  transition: opacity 0.2s ease;
+}
+
+.excursions .slick-slider .slick-list .slick-slide.slick-active {
+  opacity: 1;
+}
+
+.excursions .slick-slider .slick-arrow {
+  right: 80px;
 }
 
 .excursions-container {
   width: 100%;
-  padding: 90px 80px 0 80px;
+  padding-left: 80px;
+  padding-right: 80px;
 }
 
 .excursions-text-main {
@@ -580,6 +601,7 @@
 
 .footer-icon-list__link {
   margin: 0 20px;
+  display: inline-block;
   -webkit-transform: rotate(0deg);
       -ms-transform: rotate(0deg);
           transform: rotate(0deg);
@@ -590,7 +612,7 @@
   transition: transform 0.2s linear, -webkit-transform 0.2s linear;
 }
 
-.footer-icon-list__link :hover {
+.footer-icon-list__link:hover {
   -webkit-transform: rotate(360deg);
   -ms-transform: rotate(360deg);
       transform: rotate(360deg);
@@ -599,20 +621,6 @@
 .footer-icon-list-link__svg {
   width: 18px;
   height: 18px;
-  -webkit-transform: rotate(0deg);
-      -ms-transform: rotate(0deg);
-          transform: rotate(0deg);
-  -webkit-transition: -webkit-transform 0.2s linear;
-  transition: -webkit-transform 0.2s linear;
-  -o-transition: transform 0.2s linear;
-  transition: transform 0.2s linear;
-  transition: transform 0.2s linear, -webkit-transform 0.2s linear;
-}
-
-.footer-icon-list-link__svg :hover {
-  -webkit-transform: rotate(360deg);
-  -ms-transform: rotate(360deg);
-      transform: rotate(360deg);
 }
 
 .footer-icon__info {

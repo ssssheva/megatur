@@ -26,6 +26,33 @@ testWebP(function (support) {
 
 $(document).ready(function () {
 	$('.slider').slick({
-		slidesToShow: 3,
+		slidesToShow: 5,
+		infinite: false,
+		responsive: [
+			{
+				breakpoint: 2000,
+				settings: {
+					slidesToShow: 4,
+				}
+			},
+			{
+				breakpoint: 1500,
+				settings: {
+					slidesToShow: 3,
+				}
+			},
+			{
+				breakpoint: 999,
+				settings: {
+					slidesToShow: 2,
+				}
+			},
+			{
+				breakpoint: 768,
+				settings: {
+					slidesToShow: 1,
+				}
+			},
+		]
 	});
 });  
