@@ -159,7 +159,7 @@ a {
 		}
 	}
 	&__lang {
-		margin-top: 10px;
+		margin: 10px 0 0 5px;
 	}
 	&__search {
 		margin: 6px 0 0 480px;
@@ -167,6 +167,7 @@ a {
 		}
 	}
 	.maine-menu__link {
+		display: flex;
 		color: #444444;
 		:hover {
 			color: #11725d;
