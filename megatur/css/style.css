@@ -959,6 +959,14 @@ body {
           justify-content: space-between;
 }
 
+.content-left-search-input {
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 17px;
+  color: #11725d;
+  padding-top: 10px;
+}
+
 .emotion {
   background-color: #ffffff;
   width: 100%;
